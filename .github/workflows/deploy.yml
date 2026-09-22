@@ -27,10 +27,10 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Checkout Hugo Profile Theme
-        run: |
-          rm -rf themes/hugo-profile
-          git clone https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile
+      - name: Setup Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: '1.22'
 
       - name: Setup Pages
         id: pages
