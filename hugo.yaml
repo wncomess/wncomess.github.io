@@ -1,7 +1,7 @@
 baseURL: "https://wncomess.github.io"
 languageCode: "en-us"
 title: "William Comess"
-theme: hugo-profile
+theme: "hugo-profile"
 
 # Multilingual configuration
 defaultContentLanguage: "en"
