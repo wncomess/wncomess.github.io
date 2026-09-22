@@ -26,9 +26,11 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          submodules: recursive
-          fetch-depth: 0
+
+      - name: Checkout Hugo Profile Theme
+        run: |
+          rm -rf themes/hugo-profile
+          git clone https://github.com/gurusabarish/hugo-profile.git themes/hugo-profile
 
       - name: Setup Pages
         id: pages
