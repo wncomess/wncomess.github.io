@@ -1,7 +1,9 @@
 baseURL: "https://wncomess.github.io"
 languageCode: "en-us"
 title: "William Comess"
-theme: "hugo-profile"
+module:
+  imports:
+    - path: github.com/gurusabarish/hugo-profile
 
 # Multilingual configuration
 defaultContentLanguage: "en"
