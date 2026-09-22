@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>William Comess | Portfolio</title>
+    <style>
+        :root {
+            --primary: #800000; /* UChicago Maroon */
+            --text-dark: #222222;
+            --text-muted: #555555;
+            --bg-light: #f9f9f9;
+            --border: #e0e0e0;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: var(--text-dark);
+            line-height: 1.6;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+
+        header {
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--primary);
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            font-weight: 500;
+        }
+
+        .contact-links {
+            margin-top: 15px;
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        a {
+            color: var(--primary);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .btn:hover {
+            background-color: #600000;
+            text-decoration: none;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 5px;
+        }
+
+        .entry {
+            margin-bottom: 20px;
+        }
+
+        .entry-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            flex-wrap: wrap;
+        }
+
+        .entry-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+        }
+
+        .entry-date {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+
+        .entry-subtitle {
+            font-style: italic;
+            color: var(--text-muted);
+            margin-bottom: 8px;
+        }
+
+        ul {
+            margin-left: 20px;
+            margin-top: 5px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 60px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>William Comess</h1>
+            <div class="subtitle">Mathematics & Statistics Student | University of Chicago</div>
+            <div class="contact-links">
+                <a href="mailto:wcomess@uchicago.edu">Email</a> •
+                <a href="https://github.com/wncomess" target="_blank">GitHub</a> •
+                <a href="resume.pdf" class="btn" target="_blank">Download Resume (PDF)</a>
+            </div>
+        </header>
+
+        <section id="about">
+            <h2>About</h2>
+            <p>I am an undergraduate student studying Mathematics and Statistics at the University of Chicago. My academic interests focus on quantitative research, computational neuroscience, and Property & Casualty actuarial science.</p>
+        </section>
+
+        <section id="education">
+            <h2>Education</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">University of Chicago</span>
+                    <span class="entry-date">Expected Graduation: 2027</span>
+                </div>
+                <div class="entry-subtitle">B.S. in Mathematics and Statistics</div>
+                <ul>
+                    <li>Coursework: Probability Theory, Bayesian Statistics, Linear Algebra, Advanced Numerical Analysis, Survival Analysis.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="credentials">
+            <h2>Actuarial Examinations</h2>
+            <div class="entry">
+                <div class="entry-subtitle">Casualty Actuarial Society (CAS)</div>
+                <ul>
+                    <li><strong>Exam P</strong> (Probability) — Passed</li>
+                    <li><strong>Exam MAS-I</strong> (Modern Actuarial Statistics I) — Passed</li>
+                    <li><strong>Exam MAS-II</strong> (Modern Actuarial Statistics II) — Passed</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="research">
+            <h2>Research & Experience</h2>
+            <div class="entry">
+                <div class="entry-header">
+                    <span class="entry-title">Computational Neuroscience Research</span>
+                </div>
+                <div class="entry-subtitle">University of Chicago</div>
+                <ul>
+                    <li>Modeled brain connectivity and cortical surface dynamics using geodesic distance metrics and optimal transport theory (Wasserstein distances).</li>
+                    <li>Analyzed spatial neuroanatomical data and injection coordinates using R and Python.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 William Comess • Hosted on GitHub Pages</p>
+        </footer>
+    </div>
+
+</body>
+</html>
